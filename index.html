@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo-leccion" title="Visualizacion">Visualizacion de areas de siembra en hectareas por municipio</h1>
+    <hr width="100%">
+    <label for="endPoint">Ingrese el endPoint: </label>
+    <input type="text" id="endPoint">
+    <script src="api.js"></script>
+    <button type="button" onclick="consumirApi()">Consumir API</button>
+
+    <hr width="100%">
+    <div id="myDiv"></div>
+    <hr width="100%">
+    <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script>
+
+
+    <h1 class="titulo-leccion" title="Visualizacion">Visualizacion de Población Por continente</h1>
+    <hr width="100%">
+    <label for="endPointPoblacion">Ingrese el endPoint: </label> 
+    <input type="text" id="endPointPoblacion">
+    <label for="continentSelect">Seleccione un continente:</label>
+    <select id="continentSelect">
+        <option value="Africa">Africa</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="North America">North America</option>
+        <option value="Oceania">Oceania</option>
+        <option value="South America">South America</option>
+    </select>
+    <script src="api.js"></script>
+    <button type="button" onclick="consumirApiPoblacion()">Consumir API</button> 
+
+    <hr width="100%">
+    <div id="myDivPoblacion"></div>
+    <hr width="100%">
+    <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script>
+
+
+    <h1 class="titulo-leccion" title="Visualizacion">Visualizacion de usuarios por Dominio</h1>
+    <hr width="100%">
+    <label for="endPointUsuarios">Ingrese el endPoint: </label>
+    <input type="text" id="endPointUsuarios">
+    <script src="api.js"></script>
+    <button type="button" onclick="consumirApiUsuarios()">Consumir API</button>
+
+    <hr width="100%">
+    <div>
+        <div id="myDivDominios" width="50%"></div>
+        <div id="myDivContrasenas" width="50%"></div>
+    </div>
+    <script src="https://cdn.plot.ly/plotly-2.29.1.min.js" charset="utf-8"></script>
+</body>
+</html>
